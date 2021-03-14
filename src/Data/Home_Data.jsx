@@ -41,6 +41,11 @@ const Heading_data = [
         title1:"About ",
         title2:"Us",
         headingcontent:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    {
+        title1:"Blog ",
+        title2:"Post",
+        headingcontent:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     }
 ]
 export {Sdata, Heading_data}

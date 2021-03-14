@@ -33,6 +33,12 @@ function BlogCardComponent(props) {
                 since the 1500s
               </p>
             </div>
+            <div class="post-status">
+                <ul>
+                  <li><i class="flat flaticon-folder"></i> <span><a href="javascript:void(0)">{props.item.position}</a></span></li>
+                  <li><i class="flat flaticon-chat"></i> <span>{props.item.comments}</span></li>
+                </ul>
+              </div>
           </div>
           <div className="clearfix"></div>
         </div>
