@@ -4,7 +4,23 @@ import { Card } from "react-bootstrap";
 function BlogCardComponent(props) {
   return (
     <>
-      <div style={({ width: "541px" }, { marginRight: "28px" })}>
+      <div class="item blog_card">
+        <div class="post-img"> <img src={props.item.image} alt="Post" />
+          <div class="posted_on"> <span class="date">{props.item.date}</span> <span class="month">{props.item.month}</span> </div>
+        </div>
+        <div class="post-detail">
+          <h5><a href="blog-detail.html">{props.item.title}</a></h5>
+          <div class="post-status">
+            <ul>
+              <li><i class="flat flaticon-folder"></i> <span><a href="javascript:void(0)">{props.item.position}</a></span></li>
+              <li><i class="flat flaticon-chat"></i> <span>{props.item.comments}</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      {/* <div style={({ width: "541px" }, { marginRight: "28px" })}>
         <div className="item blog_card">
           <div className="post-img">
             <img src={props.item.image} alt="Post" />
@@ -34,15 +50,15 @@ function BlogCardComponent(props) {
               </p>
             </div>
             <div class="post-status">
-                <ul>
-                  <li><i class="flat flaticon-folder"></i> <span><a href="javascript:void(0)">{props.item.position}</a></span></li>
-                  <li><i class="flat flaticon-chat"></i> <span>{props.item.comments}</span></li>
-                </ul>
-              </div>
+              <ul>
+                <li><i class="flat flaticon-folder"></i> <span><a href="javascript:void(0)">{props.item.position}</a></span></li>
+                <li><i class="flat flaticon-chat"></i> <span>{props.item.comments}</span></li>
+              </ul>
+            </div>
           </div>
           <div className="clearfix"></div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
