@@ -1,0 +1,30 @@
+#root {
+  font-family: sans-serif, poppins;
+}
+body {
+  overflow: auto !important;
+}
+.service-card:hover {
+  background: #2285d9;
+  color: white;
+}
+Row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wraper section#qualities.index-3 {
+  padding: 0;
+  position: relative;
+  min-height: 250px;
+  overflow: visible !important;
+  top: -100px;
+  z-index: 999;
+}
+footer {
+  padding: 100px 0;
+  min-height: 600px;
+  padding: 100px 0;
+  min-height: 600px;
+  /* margin-top: -600px; */
+  font-family: "Poppins", sans-serif;
+}
